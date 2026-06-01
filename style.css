@@ -1,0 +1,420 @@
+/* ==========================================================================
+   1. Base Configuration & Reset
+   ========================================================================== */
+:root {
+    --primary-color: #3b82f6;
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --dark: #1f2937;
+    --light: #f3f4f6;
+    --text: #4b5563;
+    --dark-bg: #1f2937;
+    --light-bg: #f3f4f6;
+    --text-main: #374151;
+    --white: #ffffff;
+    --transition-fast: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+
+section {
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--dark-bg);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color var(--transition-fast);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+}
+
+/* ==========================================================================
+   2. Layout Components (Navigation & Layout Grids)
+   ========================================================================== */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Navigation Menu CSS Bar */
+.navbar {
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+/* Hamburger Menu Toggle Trigger */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    width: 28px;
+    height: 20px;
+    position: relative;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: var(--dark-bg);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    border-radius: 2px;
+    transition: all var(--transition-fast);
+}
+
+.nav-toggle-label span::before { content: ''; top: -8px; }
+.nav-toggle-label span::after { content: ''; top: 8px; }
+
+/* ==========================================================================
+   3. Body Sections (Hero, Services, Portfolio, Contact)
+   ========================================================================== */
+/* Hero Area Layout */
+.hero-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Service Cards */
+.services-section {
+    background-color: var(--white);
+}
+.section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+.card {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform var(--transition-fast);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: var(--dark-bg);
+}
+
+/* Portfolio Visual Grid */
+.portfolio-section {
+    background-color: var(--light-bg);
+}
+
+.portfolio-item {
+    background-color: #cbd5e1;
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* Forms CSS Rules */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+
+
+.contact-form {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+    /* Map Wrapper */
+        .map-container {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+/* ==========================================================================
+   4. Multi-Column Footer Layout
+   ========================================================================== */
+.footer {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 60px 20px 20px 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-col p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.footer-col ul li a {
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.footer-col ul li a:hover {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+/* Contact Info Sub-styling */
+.contact-info li {
+    opacity: 0.8;
+}
+
+.contact-info a {
+    display: inline;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   5. Mobile Responsive Media Queries
+   ========================================================================== */
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--white);
+        width: 100%;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform var(--transition-fast);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    /* Menu Visibility when checked */
+    .nav-toggle:checked ~ .nav-menu {
+        transform: scale(1, 1);
+    }
+
+    /* Hamburger Animation to 'X' */
+    .nav-toggle:checked ~ .nav-toggle-label span { background: transparent; }
+    .nav-toggle:checked ~ .nav-toggle-label span::before { transform: rotate(45deg); top: 0; }
+    .nav-toggle:checked ~ .nav-toggle-label span::after { transform: rotate(-45deg); top: 0; }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .footer {
+        padding: 40px 20px 20px 20px;
+    }
+    
+    .footer-grid {
+        gap: 30px;
+    }
+
+    .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .map-container {
+                min-height: 300px;
+            }
+}
