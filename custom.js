@@ -20,7 +20,10 @@ document.getElementById('jsonForm').addEventListener('submit', async (e) => {
             body: JSON.stringify(data) // Send JSON string
         });
 
-        const result = await response.json();
+        //TODO : Remove below line and uncomment the line after that to get actual response from server
+        //const result = await response.json();
+        result = '{"status":"success","message":"Thanks for contacting us, we will revert you soon."}';
+        result = JSON.parse(result);
         // Show the message from your PHP script inside the paragraph
         outputParagraph.textContent = result.message;
 
@@ -55,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Automatically trigger after 2 seconds
-    setTimeout(openPopup, 2000);
+    setTimeout(openPopup, 500);
 
     // Close the popup when the user clicks the "Contact Us" link
     ctaLink.addEventListener("click", () => {
