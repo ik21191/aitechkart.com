@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AITechKart - Custom Web & Mobile App Development</title>
+    <title>AI TechKart - Custom Web & Mobile App Development</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +13,7 @@
     <!-- Navigation Header -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">AITechKart</a>
+            <a href="#" class="logo">AI TechKart</a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label">
                 <span></span>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="description" rows="5" required
+                        <textarea id="message" name="description" rows="5" maxlength="150" required
                             placeholder="Please provide a brief description about your inquiry."></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
@@ -129,6 +129,23 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
+            
+            <!-- Overlay section when sending contact us query start here-->
+            <!-- 1. Intermediate Processing HTML Screen (Initially Hidden) -->
+            <div id="loadingOverlay" class="overlay">
+                <div class="spinner"></div>
+                <h2>Please don't close or reload the page, sending query....</h2>
+            </div>
+            
+            <!-- 2. Final Response Popup Modal (Initially Hidden) -->
+            <div id="responseModal" class="modal">
+                <div class="modal-content">
+                    <h3 id="modalHeader">Thanks for contacting us!</h3>
+                    <p id="responseText"></p>
+                    <button type="button" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+            <!-- Overlay section when sending contact us query ends here-->
         </div>
     </section>
 
@@ -137,7 +154,7 @@
         <div class="container footer-grid">
             <!-- Column 1: About/Logo -->
             <div class="footer-col">
-                <h3>AITechKart</h3>
+                <h3>AI TechKart</h3>
                 <p>A custom websites and mobile app development company. Creating modern, responsive digital experiences with clean, efficient web development design
                     frameworks.</p>
             </div>
