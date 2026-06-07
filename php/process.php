@@ -12,6 +12,9 @@ $json = file_get_contents('php://input');
 // Decode the JSON into a PHP associative array
 $data = json_decode($json, true);
 
+header('Content-Type: application/json');
+$response = [];
+
 if ($data) {
     // Access individual fields
     $username = $data['name'] ?? 'Unknown';
@@ -24,13 +27,7 @@ if ($data) {
     $contactUs = new ContactUs();
     $contactUs->insertContactUs($contactUsModel);
 
-    // Send a JSON response back to the client
-    echo json_encode([
-        "status" => "success",
-        "message" => "Thanks for contacting us, we will revert you soon."
-    ]);
-
-    $mailBody = '<h3>Hello Support</h3><p>You have received a newe query from below details.</p>
+    $mailBody = '<h3>Dear Support Team</h3><p>You have received a query from below details.</p>
     <ul>
         <li><b>Name:</b> '.$username.'</li>
         <li><b>Email:</b> '.$email.'</li>
@@ -42,7 +39,14 @@ if ($data) {
     $contactUsMailModel = new ContactUsMailModel("contact@aitechkart.com", "contact@aitechkart.com", $subject, $mailBody, "1234567890");
     $sendMail = new SendMail($contactUsMailModel);
     $sendMail->sendMail();
+
+    $response['status'] = 'success';
+    $response['message'] = "We will get back to you with your query as soon as possible.";
+    echo json_encode($response);
+    exit;
 } else {
     http_response_code(400);
-    echo json_encode(["status" => "error", "message" => "Invalid JSON"]);
+    $response['status'] = 'error';
+    $response['message'] = "Invalid JSON";
+    echo json_encode($response);
 }

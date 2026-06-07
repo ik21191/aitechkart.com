@@ -44,7 +44,6 @@ class SendMail {
 
             // 5. Fire dispatch action
             $mail->send();
-            echo 'Message has been successfully dispatched!';
         } catch (Exception $e) {
             echo "Exception {$e}";
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
