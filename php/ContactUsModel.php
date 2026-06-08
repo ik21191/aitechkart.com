@@ -1,12 +1,14 @@
 <?php
 class ContactUsModel {
     private string $name;
+    private string $number;
     private string $email;
     private string $subject;
     private string $description;
 
-    public function __construct(string $name, string $email, string $subject, string $description) {
+    public function __construct(string $name, string $number, string $email, string $subject, string $description) {
         $this->name = $name;
+        $this->number = $number;
         $this->email = $email;
         $this->subject = $subject;
         $this->description = $description;
@@ -14,6 +16,10 @@ class ContactUsModel {
 
     public function getName() {
         return $this->name;
+    }
+
+    public function getNumber() {
+        return $this->number;
     }
 
     public function getEmail() {
