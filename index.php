@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="background-color: #f4f4f4;">
     <!-- Header Section -->
     <?php include 'header.php'; ?>
     <!-- Header Section -->
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <h1>Smart solution, Innovative ideas</h1>
+            <p>Custom websites and mobile app solutions for your day-to-day business needs.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="services-section">
@@ -42,29 +51,13 @@
     <!-- expertise Section -->
 
     <!-- Contact Section -->
-     <?php include 'contact.php'; ?>
+    <?php include 'contact.php'; ?>
     <!-- Contact Section -->
 
     <!-- Footer Section -->
     <?php include 'footer.php'; ?>
     <!-- Footer Section -->
 
-    <!-- The Popup Overlay (Hidden by default, launches automatically) -->
-    <div id="popupOverlay" class="popup-overlay">
-        <!-- The Popup Box -->
-        <div class="popup-box">
-            <button id="closePopupBtn" class="close-btn" aria-label="Close popup">&times;</button>
-            <div class="popup-content">
-                <h2>Exclusive Offer! 🔥</h2>
-                <p>Get 50% discount on your first engagement with us. Don't miss out on this limited-time deal!</p>
-
-                <!-- Link pointing to your contact section -->
-                <a href="#contact" id="popupCtaLink" class="cta-btn">Contact Us Now</a>
-            </div>
-        </div>
-    </div>
-
-    <script src="custom.js"></script>
 </body>
 
 </html>
