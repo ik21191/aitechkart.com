@@ -1,1 +1,0 @@
-# aitechkart.com
