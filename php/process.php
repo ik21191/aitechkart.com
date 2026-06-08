@@ -17,12 +17,14 @@ $response = [];
 
 if ($data) {
     // Access individual fields
-    $username = $data['name'] ?? 'Unknown';
-    $email = $data['email'] ?? 'No email';
-    $subject = $data['subject'] ?? 'No subject';
-    $description = $data['description'] ?? 'No Description';
+    $unknown = 'Unknown';
+    $username = $data['name'] ?? $unknown;
+    $number = $data['number'] ?? $unknown;
+    $email = $data['email'] ?? $unknown;
+    $subject = $data['subject'] ?? $unknown;
+    $description = $data['description'] ?? $unknown;
 
-    $contactUsModel = new ContactUsModel($username, $email, $subject, $description);
+    $contactUsModel = new ContactUsModel($username, $number, $email, $subject, $description);
 
     $contactUs = new ContactUs();
     $contactUs->insertContactUs($contactUsModel);
@@ -30,13 +32,13 @@ if ($data) {
     $mailBody = '<h3>Dear Support Team</h3><p>You have received a query from below details.</p>
     <ul>
         <li><b>Name:</b> '.$username.'</li>
+        <li><b>Number:</b> '.$number.'</li>
         <li><b>Email:</b> '.$email.'</li>
         <li><b>Subject:</b> '.$subject.'</li>
         <li><b>Description:</b> '.$description.'</li>
     </ul>';
 
-    //TODO : Get mobile number from form and pass it to constructor
-    $contactUsMailModel = new ContactUsMailModel("contact@aitechkart.com", "contact@aitechkart.com", $subject, $mailBody, "1234567890");
+    $contactUsMailModel = new ContactUsMailModel("contact@aitechkart.com", "contact@aitechkart.com", $subject, $mailBody);
     $sendMail = new SendMail($contactUsMailModel);
     $sendMail->sendMail();
 

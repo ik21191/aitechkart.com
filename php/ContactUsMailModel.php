@@ -4,14 +4,12 @@ class ContactUsMailModel {
     private string $sendTo;
     private string $subject;
     private string $body;
-    private string $mobile;
 
-    public function __construct(string $from, string $sendTo, string $subject, string $body, string $mobile) {
+    public function __construct(string $from, string $sendTo, string $subject, string $body) {
         $this->from = $from;
         $this->sendTo = $sendTo;
         $this->subject = $subject;
         $this->body = $body;
-        $this->mobile = $mobile;
     }
 
     public function getFrom() {
@@ -28,9 +26,5 @@ class ContactUsMailModel {
 
     public function getBody() {
         return $this->body;
-    }
-
-    public function getMobile() {
-        return $this->mobile;
     }
 }
