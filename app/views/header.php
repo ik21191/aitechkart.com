@@ -1,7 +1,7 @@
 <!-- Navigation Header -->
 <header class="navbar">
     <div class="container nav-container">
-        <a href="#" class="logo">AI TechKart</a>
+        <a href="/" class="logo">AI TechKart</a>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
