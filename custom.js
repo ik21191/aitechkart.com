@@ -16,7 +16,7 @@ document.getElementById('jsonForm').addEventListener('submit', function (e) {
     const data = Object.fromEntries(formData.entries());
 
     //Pass data to backend script
-    fetch('./php/process.php', {
+    fetch('/send-query', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json' // Tell PHP you're sending JSON

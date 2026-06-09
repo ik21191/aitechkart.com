@@ -1,9 +1,10 @@
 <?php
-require_once "ContactUsModel.php";
-require_once "ContactUs.php";
-require_once "config.php";
-require_once "ContactUsMailModel.php";
-require_once "SendMail.php";
+require __DIR__ . "/../app/bootstrap/bootstrap.php";
+require_once PROJECT_ROOT_PATH . "/app/models/contact_us/ContactUsModel.php";
+require_once PROJECT_ROOT_PATH . "/app/models/contact_us/ContactUs.php";
+require_once PROJECT_ROOT_PATH . "/app/db/config.php";
+require_once PROJECT_ROOT_PATH . "/app/models/contact_us/ContactUsMailModel.php";
+require_once PROJECT_ROOT_PATH . "/app/helpers/SendMail.php";
 
 
 // Read raw POST data from the request body
