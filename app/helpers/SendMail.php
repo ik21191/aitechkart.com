@@ -1,8 +1,8 @@
 <?php
-// Load dependencies managed by Composer
-require_once "ContactUsMailModel.php";
-require 'vendor/autoload.php';
+require_once __DIR__ . "/../models/contact_us/ContactUsMailModel.php";
 
+// Load dependencies managed by Composer
+require __DIR__ . '/../../php/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -50,7 +50,5 @@ class SendMail {
         }
     }
 }
-
-
 
 ?>

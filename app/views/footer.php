@@ -11,10 +11,10 @@
         <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Our Expertise</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/our-services">Services</a></li>
+                <li><a href="/our-expertise">Our Expertise</a></li>
+                <li><a href="/contact-us">Contact</a></li>
             </ul>
         </div>
         <!-- Column 3: Contact Info -->

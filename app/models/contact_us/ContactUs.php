@@ -1,5 +1,5 @@
 <?php
-require_once "Database.php";
+require_once __DIR__ . "/../../db/Database.php";
 require_once "ContactUsModel.php";
 
 class ContactUs extends Database

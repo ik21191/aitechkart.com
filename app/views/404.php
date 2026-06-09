@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI TechKart - Custom Web & Mobile App Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #f4f4f4;">
+    <!-- Header Section -->
+    <?php include 'header.php'; ?>
+    <!-- Header Section -->
+
+    <section id="404" class="services-section">
+    <div class="container">
+        <h2 class="section-title">404 - Page Not Found</h2>
+        <p style="text-align: center; margin-top: 20px; margin-bottom: 40px;">Sorry, the page you are looking for does not exist.</p>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <?php include 'contact.php'; ?>
+    <!-- Contact Section -->
+
+    <!-- Footer Section -->
+    <?php include 'footer.php'; ?>
+    <!-- Footer Section -->
+
+</body>
+
+</html>

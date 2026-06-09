@@ -10,7 +10,7 @@
 
 <body style="background-color: #f4f4f4;">
     <!-- Header Section -->
-    <?php include 'header.php'; ?>
+    <?php require_once __DIR__ . '/../header.php'; ?>
     <!-- Header Section -->
 
     <!-- Services Section -->
@@ -39,11 +39,11 @@
     </section>
 
     <!-- Contact Section -->
-     <?php include 'contact.php'; ?>
+    <?php require_once __DIR__ . '/../contact.php'; ?>
     <!-- Contact Section -->
 
     <!-- Footer Section -->
-    <?php include 'footer.php'; ?>
+    <?php require_once __DIR__ . '/../footer.php'; ?>
     <!-- Footer Section -->
 
 </body>
