@@ -189,6 +189,8 @@ section {
 
 .card {
     background-color: var(--light-bg);
+    border: 1px solid #334155;
+    border-radius: 8px;
     padding: 30px;
     border-radius: 8px;
     text-align: center;
@@ -355,9 +357,15 @@ section {
 
 .value-card {
     background: #fff;
+    border: 1px solid #334155;
+    border-radius: 12px;
     padding: 30px 20px;
-    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, border-color 0.2s;
+}
+.value-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
 }
 
 .value-card h3 {
