@@ -1,6 +1,6 @@
 <section id="contact">
     <div class="container">
-        <h2 class="section-title">Send us your requirements</h2>
+        <h3 class="section-title">Send us your requirements</h3>
 
         <div class="contact-grid">
             <!-- Contact Form Component -->
