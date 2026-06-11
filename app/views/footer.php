@@ -13,7 +13,8 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/our-services">Services</a></li>
-                <li><a href="/our-expertise">Our Expertise</a></li>
+                <!-- <li><a href="/our-expertise">Our Expertise</a></li> -->
+                <li><a href="/about-us">About Us</a></li>
                 <li><a href="/contact-us">Contact</a></li>
             </ul>
         </div>
