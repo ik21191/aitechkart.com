@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI TechKart - Custom Website & Mobile App Development</title>
+    <meta name="description" content="AI TechKart is a leading software development company specializing in Custom Website and Mobile App Development. We create tailored digital solutions that drive business growth and enhance user experience. Contact us for innovative web and app development services.">
+    <meta name="author" content="AI TechKart">
+    <meta name="copyright" content="AI TechKart">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
