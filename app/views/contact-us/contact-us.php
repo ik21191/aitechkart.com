@@ -6,29 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Custom Web & Mobile App Development</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "AI TechKart",
-        "url": "https://www.aitechkart.com",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-8802529677",
-            "contactType": "customer service",
-            "email": "contact@aitechkart.com",
-            "availableLanguage": "en"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "D-2B, Rana Partap Road, Adarsh Nagar",
-            "addressLocality": "New Delhi",
-            "postalCode": "110033",
-            "addressCountry": "IN"
-        },
-        "description": "AI TechKart is a leading provider of custom web and mobile app development services, offering innovative solutions to meet your business needs. Contact us for expert assistance and personalized service."
-    }
-</script>
     <link rel="stylesheet" href="style.css">
 </head>
 
