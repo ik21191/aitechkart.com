@@ -306,7 +306,7 @@ section {
 /*About Us Section start*/
 /* Main Story Section*/
 .story-section {
-    padding: 60px 0;
+    padding: 100px 0;
     background: #fff;
 }
 
@@ -321,7 +321,6 @@ section {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-top: 50px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -334,6 +333,7 @@ section {
 .story-text p {
     margin-bottom: 15px;
     color: #555;
+    text-align: justify;
 }
 
 /* Core Values Section */
@@ -453,6 +453,7 @@ section {
 .footer-col p {
     font-size: 0.95rem;
     opacity: 0.8;
+    text-align: justify;
 }
 
 .footer-col ul {

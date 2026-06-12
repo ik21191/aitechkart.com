@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-icon">🌏</div>
                 <h3>Custom Website Development</h3>
-                <p>Fully custom-coded websites (no templates)</p>
+                <p>Fully custom-coded websites</p>
                 <p>Responsive & mobile-friendly websites</p>
                 <p>Corporate / Business Websites</p>
                 <p>Portfolio & Personal Websites</p>

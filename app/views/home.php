@@ -64,8 +64,8 @@
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="container hero-content">
-            <h1>Crafting Digital Experiences That Drive Results</h1>
-            <p>We turn your vision into powerful, user-friendly digital solutions. Specializing in custom website development and mobile app development, we build tailored software that stands out, performs exceptionally, and grows with your business.
+            <h1>Custom Website and Mobile App Development</h1>
+            <p>We turn your vision into powerful, user-friendly digital solutions. Specializing in <b>custom website development</b> and <b>custom mobile app development</b>, we build tailored software that stands out, performs exceptionally, and grows with your business.
             </p>
             <a href="#contact" class="btn">Get Started</a>
         </div>

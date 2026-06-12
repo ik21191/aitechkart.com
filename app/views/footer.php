@@ -4,8 +4,7 @@
         <!-- Column 1: About/Logo -->
         <div class="footer-col">
             <h3>AI TechKart</h3>
-            <p>A custom websites and mobile app development company. Creating modern, responsive digital experiences with clean, efficient web development design
-                frameworks.</p>
+            <p>We design and develop premium custom websites and mobile apps that help ambitious businesses stand out. From concept to launch and beyond, we deliver tailored digital solutions that are fast, secure, and built to scale.</p>
         </div>
         <!-- Column 2: Quick Links -->
         <div class="footer-col">
