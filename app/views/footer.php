@@ -12,8 +12,8 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/our-services">Services</a></li>
-                <!-- <li><a href="/our-expertise">Our Expertise</a></li> -->
                 <li><a href="/about-us">About Us</a></li>
+                <li><a href="/blog">Blog</a></li>
                 <li><a href="/contact-us">Contact</a></li>
             </ul>
         </div>
@@ -32,20 +32,3 @@
         <p>&copy; 2026 AI TechKart. All rights reserved.</p>
     </div>
 </footer>
-
-<!-- The Popup Overlay (Hidden by default, launches automatically) -->
-<div id="popupOverlay" class="popup-overlay">
-    <!-- The Popup Box -->
-    <div class="popup-box">
-        <button id="closePopupBtn" class="close-btn" aria-label="Close popup">&times;</button>
-        <div class="popup-content">
-            <h2>Exclusive Offer! 🔥</h2>
-            <p>Get 50% discount on your first engagement with us. Don't miss out on this limited-time deal!</p>
-
-            <!-- Link pointing to your contact section -->
-            <a href="#contact" id="popupCtaLink" class="cta-btn">Contact Us Now</a>
-        </div>
-    </div>
-</div>
-
-<script src="custom.js"></script>

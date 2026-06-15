@@ -363,6 +363,7 @@ section {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s, border-color 0.2s;
 }
+
 .value-card:hover {
     transform: translateY(-5px);
     border-color: #38bdf8;
@@ -683,7 +684,6 @@ section {
     background-color: #5a6268;
 }
 
-
 /* ==========================================================================
    6. Mobile Responsive Media Queries
    ========================================================================== */
@@ -768,16 +768,48 @@ section {
     .values-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .blog-header h2 {
+        font-size: 2.2rem;
+    }
 }
+
 @media (max-width: 480px) {
     .tech-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .values-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 
     h1 {
         font-size: 24px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    body {
+        padding: 30px 15px;
+    }
+
+    .blog-header {
+        margin-bottom: 35px;
+    }
+
+    .blog-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .blog-image {
+        height: 200px;
     }
 }

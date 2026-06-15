@@ -7,7 +7,7 @@
     <title>Contact Us - AI TechKart | Get in touch with our team</title>
     <meta name="description" content="Get in touch with the AI TechKart team. Have questions or want to learn more about our services? Contact us today!">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body style="background-color: #f4f4f4;">
@@ -47,6 +47,13 @@
     <!-- Footer Section -->
     <?php require_once __DIR__ . '/../footer.php'; ?>
     <!-- Footer Section -->
+
+    <!--Overlay section-->
+    <?php require_once __DIR__ . '/../overlay.php'; ?>
+    <!--Overlay section-->
+
+
+    <script src="js/custom.js"></script>
 
 </body>
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us Information - AI TechKart</title>
     <meta name="description" content="AI TechKart is a leading software development company specializing in Custom Website and Mobile App Development. We create tailored digital solutions that drive business growth and enhance user experience. Contact us for innovative web and app development services.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body style="background-color: #f4f4f4;">
@@ -25,7 +25,7 @@
                 <p>Whether you need a sleek corporate website, a high-performance e-commerce platform, or a feature-rich mobile app for iOS and Android, we handle the entire process — from strategy and design to development, testing, and ongoing support.</p>
             </div>
             <div>
-                <img class="story-img" src="about-us.jpg" alt="Our Office Workspace">
+                <img class="story-img" src="images/about-us.jpg" alt="Our Office Workspace">
             </div>
         </div>
     </section>
@@ -41,6 +41,12 @@
     <!-- Footer Section -->
     <?php require_once __DIR__ . '/../footer.php'; ?>
     <!-- Footer Section -->
+
+    <!--Overlay section-->
+    <?php require_once __DIR__ . '/../overlay.php'; ?>
+    <!--Overlay section-->
+
+    <script src="js/custom.js"></script>
 
 </body>
 
