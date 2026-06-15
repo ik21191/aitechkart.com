@@ -11,7 +11,6 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/blog.css">
 </head>
 
 <body>

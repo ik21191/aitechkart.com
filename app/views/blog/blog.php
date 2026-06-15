@@ -11,7 +11,6 @@
     
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/blog.css">
 </head>
 
 <body style="background-color: #f4f4f4;">
@@ -78,7 +77,7 @@
             <article class="blog-card">
                 <div class="blog-image">
                     <span class="blog-tag">UI/UX Design</span>
-                    <img src="images/blog1.jpg" alt="Advantage of responsive website design">
+                    <img src="/images/blog/responsive.png" alt="Advantage of responsive website design">
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">
