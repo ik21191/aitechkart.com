@@ -27,3 +27,11 @@ RewriteRule ^ index.php [L,QSA]
 ```
 php -S localhost:8000
 ```
+## Application logs
+Logs are written in the `logs` folder which is present in the parallel of the main application folder.
+
+## Packages installed in php folder
+To install any package go to `php` folder and install the package there and use accordingly.
+
+- composer require phpmailer/phpmailer
+- composer require monolog/monolog
