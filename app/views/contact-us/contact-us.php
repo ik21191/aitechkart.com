@@ -4,32 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Custom Web & Mobile App Development</title>
+    <title>Contact Us - AI TechKart | Get in touch with our team</title>
+    <meta name="description" content="Get in touch with the AI TechKart team. Have questions or want to learn more about our services? Contact us today!">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "AI TechKart",
-        "url": "https://www.aitechkart.com",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-8802529677",
-            "contactType": "customer service",
-            "email": "contact@aitechkart.com",
-            "availableLanguage": "en"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "D-2B, Rana Partap Road, Adarsh Nagar",
-            "addressLocality": "New Delhi",
-            "postalCode": "110033",
-            "addressCountry": "IN"
-        },
-        "description": "AI TechKart is a leading provider of custom web and mobile app development services, offering innovative solutions to meet your business needs. Contact us for expert assistance and personalized service."
-    }
-</script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body style="background-color: #f4f4f4;">
@@ -69,6 +47,13 @@
     <!-- Footer Section -->
     <?php require_once __DIR__ . '/../footer.php'; ?>
     <!-- Footer Section -->
+
+    <!--Overlay section-->
+    <?php require_once __DIR__ . '/../overlay.php'; ?>
+    <!--Overlay section-->
+
+
+    <script src="js/custom.js"></script>
 
 </body>
 

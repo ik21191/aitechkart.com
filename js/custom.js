@@ -1,4 +1,4 @@
-document.getElementById('jsonForm').addEventListener('submit', function (e) {
+document.getElementById('jsonForm')?.addEventListener('submit', function (e) {
     e.preventDefault(); // Prevents standard full page reload
 
     const overlay = document.getElementById('loadingOverlay');

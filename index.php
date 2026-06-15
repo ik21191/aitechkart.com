@@ -14,6 +14,22 @@ $router->get('/about-us', function () {
     require_once __DIR__ . '/app/views/about-us/about-us.php';
 });
 
+$router->get('/blog', function () {
+    require_once __DIR__ . '/app/views/blog/blog.php';
+});
+
+$router->get('/blog/importance-of-ssl', function () {
+    require_once __DIR__ . '/app/views/blog/ssl-blog.php';
+});
+
+$router->get('/blog/jwt-use-and-how-to', function () {
+    require_once __DIR__ . '/app/views/blog/jwt-blog.php';
+});
+
+$router->get('/blog/advantage-of-responsive-website', function () {
+    require_once __DIR__ . '/app/views/blog/responsive-website.php';
+});
+
 
 //Backend PHP Controllers/processors
 $router->post('/send-query', function () {
