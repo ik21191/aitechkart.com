@@ -94,8 +94,8 @@
 
             <!-- SQL -->
             <div class="tech-card">
-                <img src="/images/tech-icons/SQL.png" alt="SQL" class="emoji">
-                <div class="name">SQL</div>
+                <img src="/images/tech-icons/MySQL.png" alt="SQL" class="emoji">
+                <div class="name">MySQL</div>
             </div>
 
             <!-- MongoDB -->
