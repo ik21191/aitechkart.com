@@ -165,7 +165,7 @@ section {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -195,6 +195,33 @@ section {
     border-radius: 8px;
     text-align: center;
     transition: transform var(--transition-fast);
+}
+
+/* Bulleted List */
+.card ul {
+    list-style: none;
+    padding-left: 0;
+    display: inline-block;
+    /* Allows the list to center as a block unit */
+    text-align: left;
+    /* Keeps text left-aligned relative to its own bullets */
+}
+
+.card ul li {
+    position: relative;
+    padding-left: 25px;
+
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Custom Bullet Icon */
+.card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
 }
 
 .card:hover {
@@ -961,7 +988,7 @@ section {
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .footer {
@@ -1018,6 +1045,10 @@ section {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .hero-content h1 {
+        font-size: 2.0rem;
+    }
+
     h1 {
         font-size: 24px;
     }
@@ -1026,6 +1057,7 @@ section {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
     body {
         padding: 30px 15px;
     }

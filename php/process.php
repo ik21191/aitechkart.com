@@ -6,6 +6,9 @@ require_once PROJECT_ROOT_PATH . "/app/db/config.php";
 require_once PROJECT_ROOT_PATH . "/app/models/contact_us/ContactUsMailModel.php";
 require_once PROJECT_ROOT_PATH . "/app/helpers/SendMail.php";
 
+require_once __DIR__ . '/../app/helpers/LoggerFactory.php';
+
+$logger = LoggerFactory::getLogger(__FILE__);
 
 // Read raw POST data from the request body
 $json = file_get_contents('php://input');
@@ -17,6 +20,7 @@ header('Content-Type: application/json');
 $response = [];
 
 if ($data) {
+    $logger->info("Received contact us query: " . json_encode($data));
     // Access individual fields
     $unknown = 'Unknown';
     $username = $data['name'] ?? $unknown;
@@ -41,13 +45,20 @@ if ($data) {
 
     $contactUsMailModel = new ContactUsMailModel("contact@aitechkart.com", "contact@aitechkart.com", $subject, $mailBody);
     $sendMail = new SendMail($contactUsMailModel);
-    $sendMail->sendMail();
-
-    $response['status'] = 'success';
-    $response['message'] = "We will get back to you with your query as soon as possible.";
-    echo json_encode($response);
+    if ($sendMail->sendMail()) {
+        http_response_code(200);
+        $response['status'] = 'success';
+        $response['message'] = "We will get back to you with your query as soon as possible.";
+        echo json_encode($response);
+    } else {
+        http_response_code(503);
+        $response['status'] = 'error';
+        $response['message'] = "There is some issue connecting with the backend server. Please try again later.";
+        echo json_encode($response);
+    }
     exit;
 } else {
+    $logger->error("Failed to decode JSON: " . json_last_error_msg());
     http_response_code(400);
     $response['status'] = 'error';
     $response['message'] = "Invalid JSON";

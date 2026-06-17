@@ -33,7 +33,8 @@ document.getElementById('jsonForm')?.addEventListener('submit', function (e) {
         if (data.status === 'success') {
             modalHeader.style.color = '#28a745'; 
         } else {
-            modalHeader.style.color = '#dc3545'; 
+            modalHeader.style.color = '#dc3545';
+            modalHeader.textContent = "Error Occurred";
         }
 
         responseText.textContent = data.message;
@@ -57,6 +58,7 @@ function closeModal() {
 }
 
 // Popup functionality starts here
+/*Temporary disabled for now, will be re-enabled in the future
 document.addEventListener("DOMContentLoaded", () => {
     const closeBtn = document.getElementById("closePopupBtn");
     const overlay = document.getElementById("popupOverlay");
@@ -97,5 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+*/
 
 //Popup functionality ends here

@@ -6,19 +6,23 @@ require __DIR__ . '/../../php/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+require_once __DIR__ . '/LoggerFactory.php';
+
 class SendMail {
-    private $smtpProvider = 'smtpout.secureserver.net';             // Specify your SMTP provider host
+    private $smtpProvider = 'smtpout.secureserver.net';
 
     private ContactUsMailModel $contactUsMailModel;
     public function __construct(ContactUsMailModel $contactUsMailModel) {
         $this->contactUsMailModel = $contactUsMailModel;
     }
 
-    public function sendMail()
+    public function sendMail(): bool
     {
+        $logger = LoggerFactory::getLogger(__CLASS__);
+        $logger->info("Sending mail to " . $this->contactUsMailModel->getSendTo());
+        // Create an instance; passing 'true' enables structured error exceptions
+        $mail = new PHPMailer(true);
         try {
-            // Create an instance; passing 'true' enables structured error exceptions
-            $mail = new PHPMailer(true);
             // 1. SMTP Server Settings Configuration
             $mail->isSMTP();                                                // Route email using SMTP
             $mail->Host       = $this->smtpProvider;
@@ -44,9 +48,12 @@ class SendMail {
 
             // 5. Fire dispatch action
             $mail->send();
+            return true;
         } catch (Exception $e) {
-            echo "Exception {$e}";
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            $logger->error("Error while sending mail to " . $this->contactUsMailModel->getSendTo());
+            $logger->error($e->getMessage());
+            $logger->error($mail->ErrorInfo);
+            return false;
         }
     }
 }

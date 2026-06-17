@@ -34,9 +34,9 @@
             <div class="map-container">
                 <!-- Swap out the src URL below with your custom map embed link -->
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.9358393359726!2d77.17455029999999!3d28.721463399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d012210e1e763%3A0x44c4ab342ea71a83!2sSaii%20Tech%20Solutions!5e0!3m2!1sen!2sin!4v1779353043552!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.173785885508!2d77.17079897409833!3d28.722689279983392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d012210e1e763%3A0x44c4ab342ea71a83!2sAI%20TechKart!5e1!3m2!1sen!2sin!4v1781699493508!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" 
+                    ></iframe>
             </div>
         </div>
 

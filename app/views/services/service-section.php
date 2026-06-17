@@ -6,51 +6,63 @@
             <div class="card">
                 <div class="card-icon">🌏</div>
                 <h3>Custom Website Development</h3>
-                <p>Fully custom-coded websites</p>
-                <p>Responsive & mobile-friendly websites</p>
-                <p>Corporate / Business Websites</p>
-                <p>Portfolio & Personal Websites</p>
+                <ul>
+                    <li>Fully custom-coded websites</li>
+                    <li>Responsive & mobile-friendly websites</li>
+                    <li>Corporate / Business Websites</li>
+                    <li>Portfolio & Personal Websites</li>
+                </ul>
             </div>
             <div class="card">
                 <div class="card-icon">🛒</div>
                 <h3>E-commerce Website Development</h3>
-                <p>Custom online stores</p>
-                <p>Multi-vendor marketplaces</p>
-                <p>Payment gateway integration</p>
-                <p>Shopping cart & order management systems</p>
+                <ul>
+                    <li>Custom online stores</li>
+                    <li>Multi-vendor marketplaces</li>
+                    <li>Payment gateway integration</li>
+                    <li>Shopping cart & order management systems</li>
+                </ul>
             </div>
             <div class="card">
                 <div class="card-icon">📱</div>
                 <h3>Mobile App Development</h3>
-                <p>iOS App Development (Swift)</p>
-                <p>Android App Development (Kotlin)</p>
-                <p>Cross-platform App Development (Flutter & React Native)</p>
-                <p>Hybrid Mobile Applications</p>
+                <ul>
+                    <li>iOS App Development (Swift)</li>
+                    <li>Android App Development (Kotlin)</li>
+                    <li>Cross-platform App Development (Flutter & React Native)</li>
+                    <li>Hybrid Mobile Applications</li>
+                </ul>
             </div>
 
             <div class="card">
                 <div class="card-icon">👨🏻‍💻</>
                 </div>
                 <h3>Backend Development & APIs</h3>
-                <p>Custom API Development & Integration</p>
-                <p>API Authentication</p>
-                <p>Database Design & Management</p>
-                <p>Server-side development (Node.js, Laravel, Django, etc.)</p>
+                <ul>
+                    <li>Custom API Development & Integration</li>
+                    <li>API Authentication</li>
+                    <li>Database Design & Management</li>
+                    <li>Server-side development (Node.js, Laravel, Django, etc.)</li>
+                </ul>
             </div>
             <div class="card">
                 <div class="card-icon">☸</div>
                 <h3>Cloud Solutions</h3>
-                <p>GCP(Google Cloud Product)</p>
-                <p>AWS (Amazon Web Services)</p>
-                <p>Microsoft Azure</p>
-                <p>Containerization & Orchestration (Docker, Kubernetes)</p>
+                <ul>
+                    <li>GCP(Google Cloud Product)</li>
+                    <li>AWS (Amazon Web Services)</li>
+                    <li>Microsoft Azure</li>
+                    <li>Containerization & Orchestration (Docker, Kubernetes)</li>
+                </ul>
             </div>
             <div class="card">
                 <div class="card-icon">✍🏻</div>
                 <h3>Digital Strategy & Consulting</h3>
-                <p>Technical Consultation</p>
-                <p>Digital Transformation Strategy</p>
-                <p>Technology Stack Recommendation</p>
+                <ul>
+                    <li>Technical Consultation</li>
+                    <li>Digital Transformation Strategy</li>
+                    <li>Technology Stack Recommendation</li>
+                </ul>
             </div>
         </div>
     </div>
