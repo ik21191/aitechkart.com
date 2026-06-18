@@ -30,8 +30,7 @@ class LoggerFactory
         foreach ($config['handlers'] as $handlerConfig) {
             $handler = new StreamHandler(
                 $handlerConfig['path'],
-                $handlerConfig['level'],
-                $handlerConfig['bubble']
+                $handlerConfig['level']
             );
 
             $handler->setFormatter($formatter);

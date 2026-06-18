@@ -48,6 +48,7 @@ class SendMail {
 
             // 5. Fire dispatch action
             $mail->send();
+            $logger->info("Mail sent successfully to " . $this->contactUsMailModel->getSendTo());
             return true;
         } catch (Exception $e) {
             $logger->error("Error while sending mail to " . $this->contactUsMailModel->getSendTo());
