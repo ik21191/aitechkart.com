@@ -35,3 +35,7 @@ To install any package go to `php` folder and install the package there and use 
 
 - composer require phpmailer/phpmailer
 - composer require monolog/monolog
+- composer require vlucas/phpdotenv
+
+## Secrets
+Create a `.env` and put in the root folder of the application. For your convenience a `.env-sample` is placed in the `root` folder. In the production server replace sample value with the actual one.
