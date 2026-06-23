@@ -5,7 +5,7 @@ A custom website and mobile development company.
 
 ### Prerequisite
 
-**PHP Version: ** 8.4.22
+**PHP Version:** 8.4.22
 
 
 - Make sure the `.htaccess` file is present in the root folder. If the `.htaccess` file is not present in the root folder, then make it using the below contents with the name `.htaccess` . In this `.htaccess` file, we are routing all the traffic to the `index.php` file, and from the `index.php` file we are sending the request to the correct handler. So, `index.php` file is working as the `Front Controller` of this application.
@@ -38,4 +38,4 @@ To install any package go to `php` folder and install the package there and use 
 - composer require vlucas/phpdotenv
 
 ## Secrets
-Create a `.env` and put in the root folder of the application. For your convenience a `.env-sample` is placed in the `root` folder. In the production server replace sample value with the actual one.
+Create a `.env` and put in the root folder of the application. For your convenience a `.env-sample` is placed in the `root` folder. In the production server replace sample value with the actual one. In case you add a new property in `.env` file, then make sure to add a placeholder in `.env-sample` file.
