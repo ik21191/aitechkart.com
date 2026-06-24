@@ -1,3 +1,7 @@
+<!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-05332476-3cc6-4289-ab77-865c09077237" data-elfsight-app-lazy></div>
+
 <!-- Multi-Column Footer Section -->
 <footer class="footer">
     <div class="container footer-grid">

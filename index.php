@@ -2,8 +2,12 @@
 
 require_once __DIR__ . '/app/core/Router.php';
 require_once __DIR__ . '/app/helpers/LoggerFactory.php';
+//require_once __DIR__ . '/app/helpers/EnvLoader.php';
 
-$logger = LoggerFactory::getLogger(__FILE__);
+
+//$logger = LoggerFactory::getLogger(__FILE__);
+
+//$envLoader = EnvLoader::getInstance();
 
 //$logger->info("Processing request for URI: " . $_SERVER['REQUEST_URI']);
 

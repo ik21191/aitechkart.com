@@ -45,7 +45,7 @@
     </div>
 </section>
 
-
+<!--TODO: This code is duplicate move it to a file and used -->
 <section class="tech-section">
     <div class="container">
         <h2>Tech stacks we use</h2>

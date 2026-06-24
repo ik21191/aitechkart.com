@@ -7,8 +7,11 @@ require_once PROJECT_ROOT_PATH . "/app/models/contact_us/ContactUsMailModel.php"
 require_once PROJECT_ROOT_PATH . "/app/helpers/SendMail.php";
 
 require_once __DIR__ . '/../app/helpers/LoggerFactory.php';
+require_once __DIR__ . '/../app/helpers/EnvLoader.php';
 
 $logger = LoggerFactory::getLogger(__FILE__);
+$envLoader = EnvLoader::getInstance();
+
 
 // Read raw POST data from the request body
 $json = file_get_contents('php://input');
@@ -43,7 +46,7 @@ if ($data) {
         <li><b>Description:</b> '.$description.'</li>
     </ul>';
 
-    $contactUsMailModel = new ContactUsMailModel("contact@aitechkart.com", "contact@aitechkart.com", $subject, $mailBody);
+    $contactUsMailModel = new ContactUsMailModel($envLoader->getProperty("MAIL_FROM"), $envLoader->getProperty("MAIL_TO"), $subject, $mailBody);
     $sendMail = new SendMail($contactUsMailModel);
     if ($sendMail->sendMail()) {
         http_response_code(200);

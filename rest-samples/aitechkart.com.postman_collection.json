@@ -1,0 +1,37 @@
+{
+  "info": {
+    "_postman_id": "c018ba75-aaaf-4521-8bc4-21626cb5731c",
+    "name": "aitechkart.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "9446720"
+  },
+  "item": [
+    {
+      "name": "send-query",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Imran Khan\",\r\n    \"number\":\"9899878987\",\r\n    \"email\":\"test@test.com\",\r\n    \"subject\":\"This is test subject\",\r\n    \"description\":\"This is test description.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/send-query",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "send-query"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
