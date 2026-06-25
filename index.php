@@ -16,6 +16,7 @@ $router = new Router();
 //Static Routes
 $router->get('/', 'HomeController@index');
 $router->get('/our-services', 'ServiceController@index');
+$router->get('/verify-email', 'ContactUsController@verifyEmail');
 $router->get('/contact-us', function () {
     require_once __DIR__ . '/app/views/contact-us/contact-us.php';
 });
@@ -42,7 +43,7 @@ $router->get('/blog/advantage-of-responsive-website', function () {
 
 //Backend PHP Controllers/processors
 $router->post('/send-query', function () {
-    require_once __DIR__ . '/php/process.php';
+    require_once __DIR__ . '/php/contact-us-handler.php';
 });
 
 // Dispatch the request

@@ -32,7 +32,7 @@ if ($data) {
     $subject = $data['subject'] ?? $unknown;
     $description = $data['description'] ?? $unknown;
 
-    $contactUsModel = new ContactUsModel($username, $number, $email, $subject, $description);
+    $contactUsModel = new ContactUsModel($username, $number, $email, $subject, $description, '', '');
 
     $contactUs = new ContactUs();
     $contactUs->insertContactUs($contactUsModel);

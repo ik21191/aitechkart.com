@@ -35,7 +35,19 @@ To install any package go to `php` folder and install the package there and use 
 
 - composer require phpmailer/phpmailer
 - composer require monolog/monolog
-- composer require vlucas/phpdotenv
 
 ## Secrets
-Create a `.env` and put in the root folder of the application. For your convenience a `.env-sample` is placed in the `root` folder. In the production server replace sample value with the actual one. In case you add a new property in `.env` file, then make sure to add a placeholder in `.env-sample` file.
+Create a `.env` file and put in the root folder of this application. For your convenience a `.env-sample` is placed in the `root` folder. In the production server replace sample value with the actual one. In case you add a new property in `.env` file, then make sure to add a placeholder in `.env-sample` file.
+
+## PDO MySql Error
+The error **Uncaught PDOException: could not find driver** means, PHP is trying to connect to a database using **PHP Data Objects (PDO)**, but the specific database extension is either not installed or not enabled in your PHP configuration.
+
+To enable `PDO MySql` extension in your `php`, follow below steps.
+
+- Open your `php.ini` configuration file 
+- search for your database driver `;extension=pdo_mysql`
+- Remove the semicolon `(;)` from the start of the line to uncomment and enable it. The uncommented line should like below.
+
+```
+iniextension=pdo_mysql
+```
