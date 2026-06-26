@@ -5,13 +5,17 @@ class ContactUsModel {
     private string $email;
     private string $subject;
     private string $description;
+    private string $hashedToken;
+    private string $expiresAt;
 
-    public function __construct(string $name, string $number, string $email, string $subject, string $description) {
+    public function __construct(string $name, string $number, string $email, string $subject, string $description, string $hashedToken, string $expiresAt) {
         $this->name = $name;
         $this->number = $number;
         $this->email = $email;
         $this->subject = $subject;
         $this->description = $description;
+        $this->hashedToken = $hashedToken;
+        $this-> expiresAt = $expiresAt;
     }
 
     public function getName() {
@@ -32,5 +36,13 @@ class ContactUsModel {
 
     public function getDescription() {
         return $this->description;
+    }
+
+    public function getHashedToken() {
+        return $this->hashedToken;
+    }
+
+    public function getExpiresAt() {
+        return $this->expiresAt;
     }
 }

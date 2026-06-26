@@ -22,7 +22,7 @@ class SendMail
     {
         $envLoader = EnvLoader::getInstance();
         $logger = LoggerFactory::getLogger(__CLASS__);
-        $logger->info("Sending mail to " . $this->contactUsMailModel->getSendTo());
+        $logger->info("Sending mail to " . $this->contactUsMailModel->getMailTo());
         // Create an instance; passing 'true' enables structured error exceptions
 
         $maxTries = 3;
@@ -40,7 +40,7 @@ class SendMail
                 // Activate SMTP authentication
                 $mail->SMTPAuth = true;
                 // Your SMTP account username
-                $mail->Username = $this->contactUsMailModel->getFrom();
+                $mail->Username = $this->contactUsMailModel->getMailFrom();
                 // Your SMTP account password or app-token       
                 $mail->Password = $envLoader->getProperty("MAIL_PASSWORD");
                 // Secure connection using TLS                        
@@ -49,8 +49,8 @@ class SendMail
                 $mail->Port = $envLoader->getProperty("MAIL_SMTP_PORT");
 
                 // 2. Sender and Recipient Address Management
-                $mail->setFrom($this->contactUsMailModel->getFrom(), $envLoader->getProperty("MAIL_FROM_NAME")); // Define sender's email and name
-                $mail->addAddress($this->contactUsMailModel->getSendTo(), $envLoader->getProperty("MAIL_TO_NAME"));
+                $mail->setFrom($this->contactUsMailModel->getMailFrom(), $this->contactUsMailModel->getMailFromName()); // Define sender's email and name
+                $mail->addAddress($this->contactUsMailModel->getMailTo(), $this->contactUsMailModel->getMailTo());
                 //$mail->addReplyTo('info@example.com', 'Information Desk');
 
                 // 3. Optional: Incorporating File Attachments
@@ -64,10 +64,10 @@ class SendMail
 
                 // 5. Fire dispatch action
                 $mail->send();
-                $logger->info("Mail sent successfully to " . $this->contactUsMailModel->getSendTo());
+                $logger->info("Mail sent successfully to " . $this->contactUsMailModel->getMailTo());
                 $mailSent = true;
             } catch (Exception $e) {
-                $logger->error("Error while sending mail to " . $this->contactUsMailModel->getSendTo());
+                $logger->error("Error while sending mail to " . $this->contactUsMailModel->getMailTo());
                 $logger->error($e->getMessage());
                 $logger->error($mail->ErrorInfo);
                 if ($attempts >= $maxTries) {
