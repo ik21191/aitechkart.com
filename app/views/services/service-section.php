@@ -2,6 +2,7 @@
 <section id="services" class="services-section">
     <div class="container">
         <h2 class="section-title">Our Services</h2>
+        <p>We craft high-performance, conversion-focused websites that drive real business growth. From stunning custom designs to robust web applications, we deliver digital solutions tailored to your goals, audience, and industry.</p>
         <div class="grid-layout">
             <div class="card">
                 <div class="card-icon">🌏</div>
