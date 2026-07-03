@@ -17,10 +17,13 @@
 
     <!-- Services Section -->
     <section id="services" class="services-section">
-        <div class="container">
-            <h2 class="section-title">CONTACT US</h2>
-            <p style="padding: 30px; margin-bottom: 10px;">Have questions or want to learn more about our services? Reach out to us!</p>
-            <div class="grid-layout">
+    <div class="container">
+        <h2 class="section-title">CONTACT US</h2>
+        <p>We love turning ideas into high-performing, custom websites. Whether you need a complete redesign, a brand-new platform, or just want to explore possibilities, our team is here to help.</p>
+        <p>Get in touch today - we typically respond within a few hours and offer a free initial consultation.</p>
+    </div>    
+    
+    <div class="grid-layout">
                 <div class="card">
                     <div class="card-icon">📍</div>
                     <h3>Location</h3>
