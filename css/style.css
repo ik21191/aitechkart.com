@@ -70,6 +70,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    margin-top: 20px;
 }
 
 /* Navigation Menu CSS Bar */
@@ -175,20 +176,21 @@ section {
     opacity: 0.9;
 }
 
-/* Service Cards */
+/* Service Cards 
 .services-section {
     background-color: var(--white);
 }
+*/
 
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 20px;
     position: relative;
 }
 
 .card {
-    background-color: var(--light-bg);
+    background-color: var(--white);
     border: 1px solid #334155;
     border-radius: 8px;
     padding: 30px;
@@ -366,7 +368,7 @@ section {
 /* Core Values Section */
 .values-section {
     padding: 60px 0;
-    background: #f1f5f9;
+    /*background: #f1f5f9;*/
     text-align: center;
 }
 
@@ -380,6 +382,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    margin-top: 20px;
 }
 
 .value-card {
@@ -404,7 +407,7 @@ section {
 /* Tech stacks Section */
 .tech-section {
     padding: 60px 0;
-    background: #f1f5f9;
+    /*background: #f1f5f9;*/
     text-align: center;
 }
 
@@ -419,6 +422,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    margin-top: 20px;
 }
 
 .tech-card {
