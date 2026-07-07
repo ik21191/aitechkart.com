@@ -68,7 +68,7 @@
 </style>
 
 <!-- Your customized WhatsApp Link -->
-<a href="https://wa.me/918802529677?text=hi" 
+<a href="https://wa.me/918802529677?text=Hi" 
    class="wa-floating-btn" 
    target="_blank" 
    rel="noopener noreferrer">
