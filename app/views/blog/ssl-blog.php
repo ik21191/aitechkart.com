@@ -10,71 +10,86 @@
     <meta name="copyright" content="AI TechKart">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tailwind.css">
 </head>
 
-<body>
-    <!-- Header Section -->
-    <?php require_once __DIR__ . '/../header.php'; ?>
-    <!-- Header Section -->
+<body class="bg-white text-slate-800 antialiased">
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section-blog-details">
-        <div class="container hero-content">
-            <h1>Learn SSL: The Backbone of Web Security</h1>
-            <p>Learn exactly what SSL/TLS certificates are, how they encrypt your data, and why they are vital for protecting sensitive user information online.</p>
-        </div>
-    </section>
-    <!-- Hero Section -->
+  <!-- Navigation Bar -->
+    <?php require_once __DIR__ . '/../nav-section/nav-section.php'; ?>
+    <!-- Navigation Section -->
 
-    <section class="blog-section">
-        <!-- Main Content Layout -->
-        <div class="blog-detail-container">
-            <!-- Blog Article -->
-            <div class="main-content">
-                <h2>What is SSL?</h2>
-                <p>SSL stands for <strong>Secure Sockets Layer</strong>. It is the standard security technology for establishing an encrypted link between a web server (where the website lives) and a browser (like Chrome or Firefox). This link ensures that all data passed between the web server and browsers remain private and integral.</p>
+  <!-- Hero Section -->
+  <header class="bg-orange-200 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:py-32">
+    <h1 class="text-3xl sm:text-6xl font-extrabold text-slate-900 tracking-tight max-w-3xl mx-auto">
+      Learn SSL: The Backbone of Web Security</h1>
+    <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
+      Learn exactly what SSL/TLS certificates are, how they encrypt your data, and why they are vital for protecting
+      sensitive user information online.
+    </p>
 
-                <p>Today, SSL has largely been superseded by <strong>TLS (Transport Layer Security)</strong>, which is more secure. However, people still commonly refer to the technology as SSL.</p>
+  </header>
 
-                <h2>How Does SSL Encryption Work?</h2>
-                <p>SSL uses a combination of public and private keys to encrypt data. When a user navigates to an SSL-secured site, the browser and web server establish a connection known as an <strong>SSL Handshake</strong>. This complex mathematical process verifies the server's identity and sets up secure session keys.</p>
+  <section id="services" class="py-12 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div class="math-box">
-                    Public Key Encryption Formula:<br>
-                    $E(\text{message}) = \text{message}^e \pmod n$
-                </div>
+      <h2 class="mt-8 text-2xl font-bold text-gray-900">What is SSL?</h2>
 
-                <p>Once the handshake is complete, all data transferred becomes unreadable to unauthorized parties, acting as a secure "tunnel" that protects credit card numbers, passwords, and personal details.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">SSL stands for <strong>Secure Sockets Layer</strong>. It is the
+        standard security technology for establishing an encrypted link between a web server (where the website lives)
+        and a browser (like Chrome or Firefox). This link ensures that all data passed between the web server and
+        browsers remain private and integral.</p>
 
-                <h2>Types of SSL Certificates</h2>
-                <p>Not all SSL certificates are the same. They vary in the level of vetting and what they secure:</p>
-                <ul>
-                    <li><strong>Domain Validated (DV):</strong> Validates that the applicant has the right to use the domain name. Issued quickly.</li>
-                    <li><strong>Organization Validated (OV):</strong> Validates the domain and specific organization details. Provides higher trust.</li>
-                    <li><strong>Extended Validation (EV):</strong> Requires thorough background checks of the organization. Often shows the company name in the browser bar.</li>
-                </ul>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Today, SSL has largely been superseded by <strong>TLS (Transport
+          Layer Security)</strong>, which is more secure. However, people still commonly refer to the technology as SSL.
+      </p>
 
-                <h2>Why Your Website Needs SSL</h2>
-                <p>Beyond just keeping data safe, SSL is now mandatory for modern web operations:</p>
-                <ul>
-                    <li><strong>SEO Rankings:</strong> Search engines like Google give HTTPS websites a ranking boost.</li>
-                    <li><strong>Browser Warnings:</strong> Modern browsers mark unencrypted HTTP sites as "Not Secure," which scares off visitors.</li>
-                    <li><strong>Data Protection:</strong> Prevents cybercriminals from intercepting data during transmission.</li>
-                </ul>
+      <h2 class="mt-8 text-2xl font-bold text-gray-900">How Does SSL Encryption Work?</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">SSL uses a combination of public and private keys to encrypt data.
+        When a user navigates to an SSL-secured site, the browser and web server establish a connection known as an
+        <strong>SSL Handshake</strong>. This complex mathematical process verifies the server's identity and sets up
+        secure session keys.</p>
 
-                <!-- Link Block -->
-                <div class="link-box">
-                    Looking to implement an SSL certificate on your own website? Check out resources like the [Let's Encrypt](https://letsencrypt.org) foundation for free, automated certificate authorities.
-                </div>
+      <div class="flex overflow-x-auto p-5 scrollbar-thin scrollbar-thumb-neutral-700 scrollbar-track-transparent">
+        Public Key Encryption Formula:<br>
+        $E(\text{message}) = \text{message}^e \pmod n$
+      </div>
 
-                <p>Securing your website is no longer optional. It is the fundamental baseline of earning visitor trust and safeguarding the digital ecosystem.</p>
-            </div>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Once the handshake is complete, all data transferred becomes unreadable to unauthorized parties, acting as a
+        secure "tunnel" that protects credit card numbers, passwords, and personal details.</p>
 
-        </div>
+      <h2 class="mt-8 text-2xl font-bold text-gray-900">Types of SSL Certificates</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Not all SSL certificates are the same. They vary in the level of vetting and what they secure:</p>
+      <ul>
+        <li><strong>Domain Validated (DV):</strong> Validates that the applicant has the right to use the domain name.
+          Issued quickly.</li>
+        <li><strong>Organization Validated (OV):</strong> Validates the domain and specific organization details.
+          Provides higher trust.</li>
+        <li><strong>Extended Validation (EV):</strong> Requires thorough background checks of the organization. Often
+          shows the company name in the browser bar.</li>
+      </ul>
 
-    </section>
+      <h2 class="mt-8 text-2xl font-bold text-gray-900">Why Your Website Needs SSL</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Beyond just keeping data safe, SSL is now mandatory for modern web operations:</p>
+      <ul>
+        <li><strong>SEO Rankings:</strong> Search engines like Google give HTTPS websites a ranking boost.</li>
+        <li><strong>Browser Warnings:</strong> Modern browsers mark unencrypted HTTP sites as "Not Secure," which scares
+          off visitors.</li>
+        <li><strong>Data Protection:</strong> Prevents cybercriminals from intercepting data during transmission.</li>
+      </ul>
 
+      <!-- Link Block -->
+      <div class="mt-6 text-lg leading-8 text-gray-600">
+        Looking to implement an SSL certificate on your own website? Check out resources like the <a href="https://letsencrypt.org" class="text-indigo-400 hover:text-indigo-300">Let's Encrypt</a> foundation for free, automated certificate authorities.
+      </div>
+
+      <p class="mt-6 text-lg leading-8 text-gray-600">Securing your website is no longer optional. It is the fundamental baseline of earning visitor trust and
+        safeguarding the digital ecosystem.</p>
+
+    </div>
+  </section>
+
+  
     <!-- Footer Section -->
     <?php require_once __DIR__ . '/../footer.php'; ?>
     <!-- Footer Section -->

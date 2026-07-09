@@ -53,29 +53,36 @@
     </script>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 
-<body style="background-color: #f4f4f4;">
-    <!-- Header Section -->
-    <?php include 'header.php'; ?>
-    <!-- Header Section -->
+<body class="bg-slate-100 text-slate-800 antialiased">
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container hero-content">
-            <h1>Custom Website and Mobile App Development</h1>
-            <p>We turn your vision into powerful, user-friendly digital solutions. Specializing in <b>custom website development</b> and <b>custom mobile app development</b>, we build tailored software that stands out, performs exceptionally, and grows with your business.
-            </p>
-            <a href="#contact" class="btn">Get Started</a>
-        </div>
-    </section>
+  <!-- Navigation Bar -->
+    <?php require_once __DIR__ . '/nav-section/nav-section.php'; ?>
+  <!-- Navigation Section -->
 
-    <!-- Services Section -->
+  <!-- Hero Section -->
+  <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:py-32">
+    <h1 class="text-3xl sm:text-6xl font-extrabold text-slate-900 tracking-tight max-w-3xl mx-auto">
+      Custom Website and Mobile App Development</h1>
+    <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
+      We turn your vision into powerful, user-friendly digital solutions. Specializing in <b>custom website
+        development</b> and <b>custom mobile app development</b>, we build tailored software that stands out, performs
+      exceptionally, and grows with your business.
+    </p>
+    <div class="mt-10 flex justify-center gap-4">
+      <a href="#contact"
+        class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-indigo-700 transition">Get
+        Started</a>
+    </div>
+  </header>
+
+  <!-- Service Section -->
     <?php require_once __DIR__ . '/services/service-section.php'; ?>
-    <!-- Services Section -->
+  <!-- Service Section -->
 
-    <!-- about-us Section -->
+  <!-- about-us Section -->
     <?php require_once __DIR__ . '/about-us/about.php'; ?>
     <!-- about-us Section -->
 

@@ -1,70 +1,256 @@
-<!-- Services Section -->
-<section id="services" class="services-section">
-    <div class="container">
-        <h2 class="section-title">Our Services</h2>
-        <p>We craft high-performance, conversion-focused websites that drive real business growth. From stunning custom designs to robust web applications, we deliver digital solutions tailored to your goals, audience, and industry.</p>
-        <div class="grid-layout">
-            <div class="card">
-                <div class="card-icon">🌏</div>
-                <h3>Custom Website Development</h3>
-                <ul>
-                    <li>Fully custom-coded websites</li>
-                    <li>Responsive & mobile-friendly websites</li>
-                    <li>Corporate / Business Websites</li>
-                    <li>Portfolio & Personal Websites</li>
-                </ul>
-            </div>
-            <div class="card">
-                <div class="card-icon">🛒</div>
-                <h3>E-commerce Website Development</h3>
-                <ul>
-                    <li>Custom online stores</li>
-                    <li>Multi-vendor marketplaces</li>
-                    <li>Payment gateway integration</li>
-                    <li>Shopping cart & order management systems</li>
-                </ul>
-            </div>
-            <div class="card">
-                <div class="card-icon">📱</div>
-                <h3>Mobile App Development</h3>
-                <ul>
-                    <li>iOS App Development (Swift)</li>
-                    <li>Android App Development (Kotlin)</li>
-                    <li>Cross-platform App Development (Flutter & React Native)</li>
-                    <li>Hybrid Mobile Applications</li>
+<section id="services" class="bg-orange-200 py-7 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-1">Our Services</h2>
+        <p class="p-6 text-lg text-slate-600 text-center">
+            We craft high-performance, conversion-focused websites that drive real business growth. From stunning custom
+            designs to robust web applications, we deliver digital solutions tailored to your goals, audience, and industry.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <!-- Card 1 -->
+            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+                <div
+                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
+                    ⚡</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Custom Website Development</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Fully custom-coded websites</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Responsive & mobile-friendly websites</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Corporate / Business Websites</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="">Portfolio & Personal Websites</span>
+                    </li>
+
                 </ul>
             </div>
 
-            <div class="card">
-                <div class="card-icon">👨🏻‍💻</>
-                </div>
-                <h3>Backend Development & APIs</h3>
-                <ul>
-                    <li>Custom API Development & Integration</li>
-                    <li>API Authentication</li>
-                    <li>Database Design & Management</li>
-                    <li>Server-side development (Node.js, Laravel, Django, etc.)</li>
+            <!-- Card 2 -->
+            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+                <div
+                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
+                    📱</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">E-commerce Website Development</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Custom online stores</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Multi-vendor marketplaces</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Payment gateway integration</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="">Shopping cart & order management systems</span>
+                    </li>
+
                 </ul>
             </div>
-            <div class="card">
-                <div class="card-icon">☸</div>
-                <h3>Cloud Solutions</h3>
-                <ul>
-                    <li>GCP(Google Cloud Product)</li>
-                    <li>AWS (Amazon Web Services)</li>
-                    <li>Microsoft Azure</li>
-                    <li>Containerization & Orchestration (Docker, Kubernetes)</li>
+
+            <!-- Card 3 -->
+            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+                <div
+                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
+                    🎨</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Mobile App Development</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>iOS App Development (Swift)</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Android App Development (Kotlin)</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Cross-platform App Development (Flutter & React Native)</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="">Hybrid Mobile Applications</span>
+                    </li>
+
                 </ul>
             </div>
-            <div class="card">
-                <div class="card-icon">✍🏻</div>
-                <h3>Digital Strategy & Consulting</h3>
-                <ul>
-                    <li>Technical Consultation</li>
-                    <li>Digital Transformation Strategy</li>
-                    <li>Technology Stack Recommendation</li>
+
+            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+                <div
+                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
+                    ⚡</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Backend Development & APIs</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Custom API Development & Integration</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>API Authentication</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Database Design & Management</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Server-side development (Node.js, Laravel, Django, etc.)</span>
+                    </li>
+
                 </ul>
+                </p>
             </div>
+
+            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+                <div
+                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
+                    ⚡</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Cloud Solutions</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>GCP(Google Cloud Product)</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>AWS (Amazon Web Services)</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Microsoft Azure</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="">Containerization & Orchestration (Docker, Kubernetes)</span>
+                    </li>
+
+                </ul>
+                </p>
+            </div>
+
+            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+                <div
+                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
+                    ⚡</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Digital Strategy & Consulting</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Technical Consultation</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Digital Transformation Strategy</span>
+                    </li>
+
+                    <li class="flex items-start gap-2">
+                        <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>Technology Stack Recommendation</span>
+                    </li>
+
+                </ul>
+                </p>
+            </div>
+
         </div>
     </div>
 </section>

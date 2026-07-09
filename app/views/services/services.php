@@ -7,33 +7,45 @@
     <title>Our Services - AI TechKart | IT Services</title>
     <meta name="description" content="Discover AI TechKart's comprehensive IT services, including Custom Website and Mobile App Development, API Development, E-Commerce Solutions, and Cloud Services. We provide tailored digital solutions to drive business growth and enhance user experience. Contact us for innovative web and app development services.">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 
-<body style="background-color: #f4f4f4;">
-    <!-- Header Section -->
-    <?php require_once __DIR__ . '/../header.php'; ?>
-    <!-- Header Section -->
+<body class="bg-white text-slate-800 antialiased">
 
-    <!-- Company Story -->
-    <!--TODO: Make a separate css class -->
-    <section class="story-section">
-        <div class="container story-grid">
-            <div class="story-text">
-                <h2>Custom Website and Mobile App Development</h2>
-                <p>At <b>AI TechKart</b>, we are a custom Website and custom Mobile App development company, dedicated to creating high-performance responsive websites and mobile applications that fuel business growth.</p>
-                <p>We don’t believe in one-size-fits-all templates. Every project is <b>100% custom-built</b> from the ground up to reflect your brand identity, meet your specific requirements, and deliver measurable results.
+    <!-- Navigation Bar -->
+    <?php require_once __DIR__ . '/../nav-section/nav-section.php'; ?>
+    <!-- Navigation Section -->
+
+    <!-- Hero Section -->
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:py-32">
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Left Column: Description -->
+            <div class="space-y-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+                    Custom Website and Mobile App Development
+                </h2>
+
+                <p class="text-lg text-gray-600 leading-relaxed">At <b>AI TechKart</b>, we are a custom Website and custom Mobile App development company, dedicated to creating high-performance responsive websites and mobile applications that fuel business growth.</p>
+                <p class="text-lg text-gray-600 leading-relaxed">We don’t believe in one-size-fits-all templates. Every project is <b>100% custom-built</b> from the ground up to reflect your brand identity, meet your specific requirements, and deliver measurable results.
                     <p />
             </div>
-            <div>
-                <img class="story-img" src="images/our-service.jpg" alt="Custom Website and Mobile App Development">
+
+            <!-- Right Column: Image -->
+            <div class="relative w-full h-64 sm:h-96 lg:h-112.5">
+                <img
+                    src="images/our-service.jpg"
+                    alt="Custom Website and Mobile App Development"
+                    class="w-full h-full object-cover rounded-2xl shadow-xl" />
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Services Section -->
+
+    <!-- Service Section -->
     <?php require_once __DIR__ . '/service-section.php'; ?>
-    <!-- Services Section -->
+    <!-- Service Section -->
 
     <!--Tech section-->
     <?php require_once __DIR__ . '/../html-section/tech-section.php'; ?>

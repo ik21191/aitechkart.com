@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI TechKart - Custom Web & Mobile App Development</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body style="background-color: #f4f4f4;">
-    <!-- Header Section -->
-    <?php include 'header.php'; ?>
-    <!-- Header Section -->
+    <!-- Navigation Bar -->
+    <?php require_once __DIR__ . '/nav-section/nav-section.php'; ?>
+  <!-- Navigation Section -->
 
-    <section id="404" class="services-section">
-    <div class="container">
-        <h2 class="section-title">404 - Page Not Found</h2>
-        <p style="text-align: center; margin-top: 20px; margin-bottom: 40px;">Sorry, the page you are looking for does not exist.</p>
-    </div>
-    </section>
+  <!-- Hero Section -->
+  <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:py-32">
+    <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
+      Sorry, the page you are looking for does not exist. It might have been moved or deleted. Please check the URL or return to the <a href="/" class="text-indigo-600 hover:underline">homepage</a>.
+    </p>
+    
+  </header>
 
     <!-- Contact Section -->
     <?php include 'contact.php'; ?>
