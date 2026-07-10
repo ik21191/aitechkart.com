@@ -1,10 +1,10 @@
-<section id="contact" class="py-7 dark:bg-slate-900 lg:py-24">
+<section id="contact" class="py-7 dark:bg-slate-900 lg:py-24 border-t border-slate-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <!-- Section Header -->
         <div class="mx-auto max-w-2xl text-center mb-12 lg:mb-1">
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">Get in Touch</h2>
-            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">We'd love to hear from you. Send us your requirements and we'll get back to you as soon as possible.</p>
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-1">Get in Touch</h2>
+            <p class="py-5 text-lg text-slate-600 text-center">We'd love to hear from you. Send us your requirements and we'll get back to you as soon as possible.</p>
         </div>
 
         <!-- Grid Wrapper for Map & Form -->
@@ -29,8 +29,8 @@
                     <div>
                         <label for="name" class="block text-sm font-semibold text-slate-900 dark:text-white">Full Name</label>
                         <div class="mt-2.5">
-                            <input type="text" name="name" id="name" autocomplete="name" required placeholder="Your Name"
-                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
+                            <input type="text" name="name" id="name" required placeholder="Your Name"
+                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
                         </div>
                     </div>
 
@@ -38,7 +38,7 @@
                         <label for="number" class="block text-sm font-semibold text-slate-900 dark:text-white">Contact Number</label>
                         <div class="mt-2.5">
                             <input type="tel" name="number" id="number" autocomplete="tel" required placeholder="10 Digit mobile number" pattern="[0-9]{10}"
-                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
+                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
                         </div>
                     </div>
 
@@ -47,7 +47,7 @@
                         <label for="email" class="block text-sm font-semibold text-slate-900 dark:text-white">Email</label>
                         <div class="mt-2.5">
                             <input type="email" name="email" id="email" autocomplete="email" required placeholder="Your Email"
-                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
+                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@
                         <label for="subject" class="block text-sm font-semibold text-slate-900 dark:text-white">Subject</label>
                         <div class="mt-2.5">
                             <input type="text" name="subject" id="subject" required placeholder="Subject"
-                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
+                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
                         </div>
                     </div>
 
@@ -64,14 +64,14 @@
                         <label for="message" class="block text-sm font-semibold text-slate-900 dark:text-white">Your Message</label>
                         <div class="mt-2.5">
                             <textarea name="description" id="message" rows="5" required maxlength="150" placeholder="Please provide a brief description about your requirement."
-                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500"></textarea>
+                                class="block w-full rounded-md border border-slate-300 bg-white px-3.5 py-2 text-slate-900 placeholder-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500"></textarea>
                         </div>
                     </div>
 
                     <!-- Action Button -->
                     <div>
                         <button type="submit"
-                            class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400">
+                            class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400">
                             Send Message
                         </button>
                         <p id="responseOutput"></p>

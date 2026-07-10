@@ -12,8 +12,8 @@
         </div>
 
         <div class="hidden md:block">
-            <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">Get
-                Started</button>
+            <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">Get
+                Started</a>
         </div>
 
         <!-- Mobile Menu Button (Visible ONLY on small screens) -->
@@ -41,8 +41,8 @@
         <a href="/about-us" class="block text-slate-600 hover:text-indigo-600 font-medium py-2">About Us</a>
         <a href="/blog" class="block text-slate-600 hover:text-indigo-600 font-medium py-2">Blogs</a>
         <a href="/contact-us" class="block text-slate-600 hover:text-indigo-600 font-medium py-2">Contact Us</a>
-        <button
+        <a href="#contact" onclick="toggleMobileMenu()"
             class="w-full mt-2 bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">Get
-            Started</button>
+            Started</a>
     </div>
 </nav>

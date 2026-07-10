@@ -1,7 +1,7 @@
 <section id="services" class="py-7 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center text-slate-900 mb-1">Our Services</h2>
-        <p class="p-6 text-lg text-slate-600 text-center">
+        <p class="py-5 text-lg text-slate-600 text-center">
             We craft high-performance, conversion-focused websites that drive real business growth. From stunning custom
             designs to robust web applications, we deliver digital solutions tailored to your goals, audience, and industry.
         </p>
@@ -9,10 +9,8 @@
 
             <!-- Card 1 -->
             <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
-                <div
-                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
-                    ⚡</div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2">Custom Website Development</h3>
+                
+                <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Custom Website Development</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
                         <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -51,10 +49,7 @@
 
             <!-- Card 2 -->
             <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
-                <div
-                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
-                    📱</div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2">E-commerce Website Development</h3>
+                <h3 class="text-lg font-bold text-slate-900 text-center mb-2">E-commerce Website Development</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
                         <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -93,10 +88,7 @@
 
             <!-- Card 3 -->
             <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
-                <div
-                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
-                    🎨</div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2">Mobile App Development</h3>
+                <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Mobile App Development</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
                         <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -134,10 +126,7 @@
             </div>
 
             <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
-                <div
-                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
-                    ⚡</div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2">Backend Development & APIs</h3>
+                <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Backend Development & APIs</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
                         <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -176,10 +165,7 @@
             </div>
 
             <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
-                <div
-                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
-                    ⚡</div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2">Cloud Solutions</h3>
+                <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Cloud Solutions</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
                         <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -218,10 +204,7 @@
             </div>
 
             <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
-                <div
-                    class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center font-bold text-lg mb-4">
-                    ⚡</div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2">Digital Strategy & Consulting</h3>
+                <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Digital Strategy & Consulting</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
                         <svg class="h-5 w-5 shrink-0 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2"

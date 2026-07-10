@@ -1,7 +1,7 @@
 <section id="tech-section" class="py-7 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center text-slate-900 mb-1">Tech Stacks</h2>
-        <p class="p-6 text-lg text-slate-600 text-center">
+        <p class="p-6 text-lg text-slate-600 text-justify">
             At <strong>AI TechKart</strong>, we use modern technologies like <strong>HTML5</strong>, <strong>CSS3</strong>,
             <strong>React</strong>, <strong>Node.js</strong>, <strong>Python</strong>, <strong>Docker</strong>,
             <strong>MongoDB</strong> and <strong>Spring Boot</strong> to create lightning-fast, user-friendly, and
