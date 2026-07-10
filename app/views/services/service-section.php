@@ -1,4 +1,4 @@
-<section id="services" class="bg-orange-200 py-7 border-t border-slate-200">
+<section id="services" class="py-7 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center text-slate-900 mb-1">Our Services</h2>
         <p class="p-6 text-lg text-slate-600 text-center">

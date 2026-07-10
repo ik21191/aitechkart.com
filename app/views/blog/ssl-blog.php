@@ -20,7 +20,7 @@
     <!-- Navigation Section -->
 
   <!-- Hero Section -->
-  <header class="bg-orange-200 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:py-32">
+  <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:py-32">
     <h1 class="text-3xl sm:text-6xl font-extrabold text-slate-900 tracking-tight max-w-3xl mx-auto">
       Learn SSL: The Backbone of Web Security</h1>
     <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">

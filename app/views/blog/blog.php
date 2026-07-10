@@ -20,7 +20,7 @@
     <!-- Navigation Section -->
 
   <!-- Hero Section -->
-  <header class="bg-amber-300 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:py-32">
+  <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:py-32">
 
     <div class="max-w-7xl mx-auto grid grid-cols-1 gap-12 items-center">
     
@@ -35,7 +35,7 @@
   </header>
 
   <!-- Blog Grid Section -->
-  <section id="blog" class="bg-amber-600 py-7 border-t border-slate-200">
+  <section id="blog" class="py-7 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
 
