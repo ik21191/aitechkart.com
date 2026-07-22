@@ -51,3 +51,12 @@ To enable `PDO MySql` extension in your `php`, follow below steps.
 ```
 iniextension=pdo_mysql
 ```
+
+## Build using tailwind
+### TODO
+
+### For gradient color grid
+
+```
+class="p-6 bg-linear-to-br from-amber-400 via-yellow-300 rounded-xl text-black shadow-lg border border-slate-200 hover:shadow-md transition"
+```

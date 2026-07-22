@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="css/tailwind.css">
 </head>
 
-<body class="bg-slate-100 text-slate-800 antialiased">
+<body class="bg-linear-to-tr from-[#eaab58] via-[#d3ba91] to-[#eccdad] rounded-xl antialiased">
 
   <!-- Navigation Bar -->
     <?php require_once __DIR__ . '/nav-section/nav-section.php'; ?>

@@ -138,7 +138,7 @@
           <li><a href="/our-services" class="hover:text-white transition-colors duration-200">Services</a></li>
           <li><a href="/about-us" class="hover:text-white transition-colors duration-200">About Us</a></li>
           <li><a href="/blog" class="hover:text-white transition-colors duration-200">Blog</a></li>
-          <li><a href="/contact" class="hover:text-white transition-colors duration-200">Contact</a></li>
+          <li><a href="/contact-us" class="hover:text-white transition-colors duration-200">Contact</a></li>
         </ul>
       </div>
 

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/tailwind.css">
 </head>
 
-<body style="background-color: #f4f4f4;">
+<body class="bg-linear-to-tr from-[#eaab58] via-[#d3ba91] to-[#eccdad] rounded-xl antialiased">
     <!-- Navigation Bar -->
     <?php require_once __DIR__ . '/../nav-section/nav-section.php'; ?>
   <!-- Navigation Section -->
