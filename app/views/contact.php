@@ -2,9 +2,9 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <!-- Section Header -->
-        <div class="mx-auto max-w-2xl text-center mb-12 lg:mb-1">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center text-slate-900 mb-1">Get in Touch</h2>
-            <p class="py-5 text-lg text-slate-600 text-center">We'd love to hear from you. Send us your requirements and we'll get back to you as soon as possible.</p>
+            <p class="py-5 text-lg text-slate-600 text-justify">We'd love to hear from you. Send us your requirements and we'll get back to you as soon as possible.</p>
         </div>
 
         <!-- Grid Wrapper for Map & Form -->

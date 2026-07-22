@@ -8,7 +8,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
             <!-- Card 1 -->
-            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+            <div class="p-6 bg-slate-50 rounded-xl border border-black shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                 
                 <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Custom Website Development</h3>
                 <ul class="space-y-3 text-gray-700">
@@ -48,7 +48,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+            <div class="p-6 bg-slate-50 rounded-xl border border-black transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                 <h3 class="text-lg font-bold text-slate-900 text-center mb-2">E-commerce Website Development</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
@@ -87,7 +87,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+            <div class="p-6 bg-slate-50 rounded-xl border border-black transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                 <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Mobile App Development</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
@@ -125,7 +125,7 @@
                 </ul>
             </div>
 
-            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+            <div class="p-6 bg-slate-50 rounded-xl border border-black transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                 <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Backend Development & APIs</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
@@ -164,7 +164,7 @@
                 </p>
             </div>
 
-            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+            <div class="p-6 bg-slate-50 rounded-xl border border-black transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                 <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Cloud Solutions</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
@@ -203,7 +203,7 @@
                 </p>
             </div>
 
-            <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 hover:shadow-md transition">
+            <div class="p-6 bg-slate-50 rounded-xl border border-black transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
                 <h3 class="text-lg font-bold text-slate-900 text-center mb-2">Digital Strategy & Consulting</h3>
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start gap-2">
